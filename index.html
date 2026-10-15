@@ -1,116 +1,395 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fff0f6">
-  <title>Anu's Little World for You 💗</title>
+  <title>Umesh's Birthday Surprise 💗</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="floating-hearts" aria-hidden="true"></div>
+
   <header class="hero" id="home">
     <div class="tiny-label">A LITTLE BIRTHDAY SURPRISE ✨</div>
-    <h1>Happy Birthday,<br><span id="nicknameTitle">My Favourite Human</span> 💗</h1>
-    <p class="hero-copy">A tiny world made just for you — full of our kind of fun, little challenges, and a letter waiting at the end.</p>
-    <button class="primary-btn" id="startBtn">Open your surprise 🎁</button>
-    <div class="scroll-note">Keep exploring… there are secrets everywhere ↓</div>
+
+    <h1>
+      Happy Birthday,<br>
+      <span id="nicknameTitle">Umesh</span> 💗
+    </h1>
+
+    <p class="hero-copy">
+      A tiny world made just for you — filled with our kind of fun,
+      sweet memories, little challenges, and a special letter waiting at the end.
+    </p>
+
+    <button class="primary-btn" id="startBtn">
+      Open your surprise 🎁
+    </button>
+
+    <div class="scroll-note">
+      Keep exploring… there are secrets everywhere ↓
+    </div>
   </header>
 
   <nav class="nav">
-    <a href="#quiz">Quiz</a><a href="#memory">Memory game</a><a href="#wheel">Spin wheel</a><a href="#dates">Date ideas</a><a href="#hunt">Treasure hunt</a><a href="#letter">Secret letter</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#memory">Memory game</a>
+    <a href="#wheel">Spin wheel</a>
+    <a href="#dates">Date ideas</a>
+    <a href="#hunt">Treasure hunt</a>
+    <a href="#letter">Secret letter</a>
   </nav>
 
   <main>
     <section class="intro card">
       <div class="eyebrow">A NOTE BEFORE YOU START</div>
-      <h2>Ready for our little adventure? 🥹</h2>
-      <p>Some questions are silly, some are sweet, and some are about the memories we made. There are no wrong feelings here — just have fun.</p>
+
+      <h2>Umesh, ready for our little adventure? 🥹</h2>
+
+      <p>
+        This little website is made especially for you, Umesh!
+        Some questions are silly, some are sweet, and some are about
+        the memories we share. There are no wrong feelings here —
+        just enjoy your birthday surprise and have fun. 💗
+      </p>
+
       <div class="stats">
-        <div><strong id="heartCount">0</strong><span>heart points 💗</span></div>
-        <div><strong id="completedCount">0/5</strong><span>adventures done</span></div>
-        <div><strong id="levelCount">1</strong><span>your level ✨</span></div>
+        <div>
+          <strong id="heartCount">0</strong>
+          <span>heart points 💗</span>
+        </div>
+
+        <div>
+          <strong id="completedCount">0/5</strong>
+          <span>adventures done</span>
+        </div>
+
+        <div>
+          <strong id="levelCount">1</strong>
+          <span>your level ✨</span>
+        </div>
       </div>
     </section>
 
     <section id="quiz" class="section">
-      <div class="section-heading"><span>01 / GET TO KNOW US</span><h2>How well do you know our little world? 💌</h2><p>Answer the questions and collect heart points.</p></div>
+      <div class="section-heading">
+        <span>01 / GET TO KNOW US</span>
+        <h2>Umesh, how well do you know our little world? 💌</h2>
+        <p>Answer the questions and collect heart points.</p>
+      </div>
+
       <div class="card quiz-card">
-        <div class="quiz-top"><span id="questionNumber">Question 1 of 25</span><span id="quizPoints">💗 0</span></div>
-        <div class="progress"><div id="quizProgress"></div></div>
+        <div class="quiz-top">
+          <span id="questionNumber">Question 1 of 25</span>
+          <span id="quizPoints">💗 0</span>
+        </div>
+
+        <div class="progress">
+          <div id="quizProgress"></div>
+        </div>
+
         <h3 id="questionText">Loading question…</h3>
+
         <div id="options" class="options"></div>
+
         <div id="quizFeedback" class="feedback" aria-live="polite"></div>
-        <div class="quiz-controls"><button class="secondary-btn" id="prevQuestion">← Previous</button><button class="primary-btn" id="nextQuestion">Next →</button></div>
+
+        <div class="quiz-controls">
+          <button class="secondary-btn" id="prevQuestion">
+            ← Previous
+          </button>
+
+          <button class="primary-btn" id="nextQuestion">
+            Next →
+          </button>
+        </div>
+
         <div id="quizResult" class="result-box hidden"></div>
       </div>
     </section>
 
     <section id="memory" class="section">
-      <div class="section-heading"><span>02 / MINI GAME</span><h2>Find the matching hearts 🎮</h2><p>Flip two cards at a time. Match all pairs to finish this level.</p></div>
+      <div class="section-heading">
+        <span>02 / MINI GAME</span>
+        <h2>Umesh, find the matching hearts! 🎮</h2>
+        <p>Flip two cards at a time. Match all pairs to finish this level.</p>
+      </div>
+
       <div class="card">
-        <div class="game-row"><span>Moves: <b id="moves">0</b></span><span>Pairs: <b id="pairs">0/6</b></span><button class="secondary-btn" id="restartMemory">Restart</button></div>
+        <div class="game-row">
+          <span>Moves: <b id="moves">0</b></span>
+          <span>Pairs: <b id="pairs">0/6</b></span>
+
+          <button class="secondary-btn" id="restartMemory">
+            Restart
+          </button>
+        </div>
+
         <div class="memory-grid" id="memoryGrid"></div>
-        <p id="memoryMessage" class="feedback" aria-live="polite">Tap any two cards to start 💗</p>
+
+        <p id="memoryMessage" class="feedback" aria-live="polite">
+          Tap any two cards to start, birthday boy! 💗
+        </p>
       </div>
     </section>
 
     <section id="wheel" class="section">
-      <div class="section-heading"><span>03 / CHALLENGE TIME</span><h2>Spin our little challenge wheel 🎡</h2><p>Whatever it lands on, give the challenge a try!</p></div>
+      <div class="section-heading">
+        <span>03 / CHALLENGE TIME</span>
+        <h2>Umesh's little challenge wheel 🎡</h2>
+        <p>Spin the wheel and see what your birthday challenge will be!</p>
+      </div>
+
       <div class="card wheel-card">
-        <div class="wheel-pointer">▼</div><div class="wheel" id="challengeWheel"> <div class="wheel-labels"><span>Memory</span><span>Compliment</span><span>Food date</span><span>Funny face</span><span>Dream trip</span><span>Song</span><span>Truth</span><span>Photo</span></div></div>
-        <button class="primary-btn" id="spinBtn">SPIN THE WHEEL ✨</button>
-        <div id="wheelResult" class="result-box">Your challenge will appear here.</div>
+        <div class="wheel-pointer">▼</div>
+
+        <div class="wheel" id="challengeWheel">
+          <div class="wheel-labels">
+            <span>Memory</span>
+            <span>Compliment</span>
+            <span>Food date</span>
+            <span>Funny face</span>
+            <span>Dream trip</span>
+            <span>Song</span>
+            <span>Truth</span>
+            <span>Photo</span>
+          </div>
+        </div>
+
+        <button class="primary-btn" id="spinBtn">
+          SPIN THE WHEEL ✨
+        </button>
+
+        <div id="wheelResult" class="result-box">
+          Your birthday challenge will appear here.
+        </div>
       </div>
     </section>
 
     <section id="dates" class="section">
-      <div class="section-heading"><span>04 / OUR NEXT OUTING</span><h2>Pick our next date idea 🍓</h2><p>Choose a vibe and let fate help plan our next little adventure.</p></div>
-      <div class="date-grid">
-        <article class="date-card"><div class="date-emoji">🍝</div><h3>Restaurant date</h3><p>Try a new café, order one dish for each other, rate the food, and end with dessert.</p><ul><li>Find a place neither of us has tried</li><li>Share one starter and two desserts</li><li>Give the date a silly rating out of 10</li></ul><button class="secondary-btn date-pick" data-date="Restaurant date 🍝">Pick this date</button></article>
-        <article class="date-card"><div class="date-emoji">🛍️</div><h3>Shopping date</h3><p>Set a tiny budget and pick something funny, useful, or matching for each other.</p><ul><li>Choose an outfit for each other</li><li>Find the cutest thing under budget</li><li>Get a matching little keepsake</li></ul><button class="secondary-btn date-pick" data-date="Shopping date 🛍️">Pick this date</button></article>
-        <article class="date-card"><div class="date-emoji">🌅</div><h3>Long walk / drive</h3><p>Make a playlist, get a snack, and talk about everything and nothing.</p><ul><li>Take turns choosing songs</li><li>Share one dream for the future</li><li>Watch the sunset if possible</li></ul><button class="secondary-btn date-pick" data-date="Long walk / drive 🌅">Pick this date</button></article>
-        <article class="date-card"><div class="date-emoji">🍳</div><h3>Stay-in adventure</h3><p>Cook something together, play games, and make a memory without going anywhere.</p><ul><li>Try a new recipe</li><li>Play a silly challenge game</li><li>Make a shared bucket list</li></ul><button class="secondary-btn date-pick" data-date="Stay-in adventure 🍳">Pick this date</button></article>
+      <div class="section-heading">
+        <span>04 / OUR NEXT OUTING</span>
+        <h2>Umesh, pick our next adventure 🍓</h2>
+        <p>
+          Choose a vibe and let fate help us plan our next little outing.
+        </p>
       </div>
+
+      <div class="date-grid">
+        <article class="date-card">
+          <div class="date-emoji">🍝</div>
+
+          <h3>Restaurant date</h3>
+
+          <p>
+            Let's try a new café, order something delicious,
+            rate the food, and end with dessert.
+          </p>
+
+          <ul>
+            <li>Find a place neither of us has tried</li>
+            <li>Share one starter and two desserts</li>
+            <li>Give the date a silly rating out of 10</li>
+          </ul>
+
+          <button class="secondary-btn date-pick"
+                  data-date="Restaurant date 🍝">
+            Pick this date
+          </button>
+        </article>
+
+        <article class="date-card">
+          <div class="date-emoji">🛍️</div>
+
+          <h3>Shopping date</h3>
+
+          <p>
+            Let's set a tiny budget and pick something funny,
+            useful, or matching for each other.
+          </p>
+
+          <ul>
+            <li>Choose an outfit for each other</li>
+            <li>Find the cutest thing under budget</li>
+            <li>Get a matching little keepsake</li>
+          </ul>
+
+          <button class="secondary-btn date-pick"
+                  data-date="Shopping date 🛍️">
+            Pick this date
+          </button>
+        </article>
+
+        <article class="date-card">
+          <div class="date-emoji">🌅</div>
+
+          <h3>Long walk / drive</h3>
+
+          <p>
+            Let's make a playlist, get a snack,
+            and talk about everything and nothing.
+          </p>
+
+          <ul>
+            <li>Take turns choosing songs</li>
+            <li>Share one dream for the future</li>
+            <li>Watch the sunset if possible</li>
+          </ul>
+
+          <button class="secondary-btn date-pick"
+                  data-date="Long walk / drive 🌅">
+            Pick this date
+          </button>
+        </article>
+
+        <article class="date-card">
+          <div class="date-emoji">🍳</div>
+
+          <h3>Stay-in adventure</h3>
+
+          <p>
+            Let's cook something together, play games,
+            and make a memory without going anywhere.
+          </p>
+
+          <ul>
+            <li>Try a new recipe</li>
+            <li>Play a silly challenge game</li>
+            <li>Make a shared bucket list</li>
+          </ul>
+
+          <button class="secondary-btn date-pick"
+                  data-date="Stay-in adventure 🍳">
+            Pick this date
+          </button>
+        </article>
+      </div>
+
       <div id="dateResult" class="result-box hidden"></div>
     </section>
 
     <section id="hunt" class="section">
-      <div class="section-heading"><span>05 / SECRET MISSION</span><h2>The birthday treasure hunt 🔎</h2><p>Solve three little clues. Each answer unlocks the next clue.</p></div>
+      <div class="section-heading">
+        <span>05 / SECRET MISSION</span>
+        <h2>Umesh's birthday treasure hunt 🔎</h2>
+        <p>Solve three little clues. Each answer unlocks the next clue.</p>
+      </div>
+
       <div class="card hunt-card">
-        <div class="hunt-progress" id="huntProgress">CLUE 1 OF 3</div>
+        <div class="hunt-progress" id="huntProgress">
+          CLUE 1 OF 3
+        </div>
+
         <div class="clue-icon" id="clueIcon">💭</div>
+
         <h3 id="clueTitle">The beginning</h3>
-        <p id="clueText">Where did our story begin? Choose the answer that feels right.</p>
+
+        <p id="clueText">
+          Where did our story begin? Choose the answer that feels right.
+        </p>
+
         <div id="clueOptions" class="options"></div>
+
         <div id="clueFeedback" class="feedback" aria-live="polite"></div>
+
         <div id="huntReward" class="result-box hidden"></div>
       </div>
-      <p class="small-note">You can personalize the clues in <code>script.js</code> with your real first-meet place and inside jokes.</p>
+
+      <p class="small-note">
+        You can personalize the clues in <code>script.js</code>
+        with our real first-meet place and inside jokes.
+      </p>
     </section>
 
     <section id="letter" class="section">
-      <div class="section-heading"><span>FINAL LEVEL / JUST FOR YOU</span><h2>One last little secret 🌙</h2><p>Complete the quiz, memory game, wheel, date pick, and treasure hunt to reveal the letter.</p></div>
+      <div class="section-heading">
+        <span>FINAL LEVEL / JUST FOR YOU</span>
+        <h2>Umesh, one last little secret 🌙</h2>
+        <p>
+          Complete the quiz, memory game, wheel, date pick,
+          and treasure hunt to reveal your birthday letter.
+        </p>
+      </div>
+
       <div class="card letter-card">
-        <div class="lock" id="letterLock">🔒</div><h3 id="letterHeading">A letter is waiting…</h3>
-        <p id="letterStatus">Finish the five adventures above to unlock it.</p>
-        <div class="letter-progress"><div id="letterProgress"></div></div>
-        <button class="primary-btn" id="unlockLetterBtn">Check my progress 💗</button>
+        <div class="lock" id="letterLock">🔒</div>
+
+        <h3 id="letterHeading">A letter is waiting…</h3>
+
+        <p id="letterStatus">
+          Finish the five adventures above to unlock it.
+        </p>
+
+        <div class="letter-progress">
+          <div id="letterProgress"></div>
+        </div>
+
+        <button class="primary-btn" id="unlockLetterBtn">
+          Check my progress 💗
+        </button>
+
         <div id="secretLetter" class="secret-letter hidden">
           <div class="envelope">💌</div>
-          <h3>To my favourite human,</h3>
-          <p>Happy Birthday! 🥳 I hope this new year of your life brings you peace, laughter, good food, unexpected adventures, and all the little things that make you happy.</p>
-          <p>From random outings and restaurant plans to shopping trips and long conversations, the small moments are what make memories special. I'm really glad our paths crossed, and I hope we keep making more stories worth remembering.</p>
-          <p>I don't know exactly what the future holds, but I do know that I want it to be full of kindness, laughter, and people who make life feel a little brighter. Keep being your lovely, weird, wonderful self. You deserve the happiest birthday. ❤️</p>
-          <p class="signature">Always cheering for you,<br><strong>Anu 💗</strong></p>
-          <button class="secondary-btn" id="confettiBtn">Celebrate again 🎉</button>
+
+          <h3>To my favourite human, Umesh,</h3>
+
+          <p>
+            Happy Birthday, Umesh! 🥳💗 I hope this new year of your
+            life brings you peace, laughter, good food, unexpected
+            adventures, and all the little things that make you happy.
+          </p>
+
+          <p>
+            From random outings and restaurant plans to shopping trips
+            and long conversations, the small moments are what make
+            memories special. I'm really glad our paths crossed,
+            and I hope we keep making more stories worth remembering.
+          </p>
+
+          <p>
+            Thank you for being you. Keep smiling, keep chasing your
+            dreams, and never forget how much happiness you bring to
+            the people around you. I hope this birthday becomes one
+            of those memories that makes you smile whenever you
+            think about it.
+          </p>
+
+          <p>
+            I don't know exactly what the future holds, but I hope
+            it brings us plenty of reasons to laugh, explore new
+            places, share good food, and create beautiful memories.
+            You deserve a year full of happiness and love.
+          </p>
+
+          <p>
+            So, birthday boy, enjoy your special day!
+            This little website is just one small way of saying
+            that you are special to me. ❤️
+          </p>
+
+          <p class="signature">
+            Always cheering for you,<br>
+            <strong>Anu 💗</strong>
+          </p>
+
+          <button class="secondary-btn" id="confettiBtn">
+            Celebrate again 🎉
+          </button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>Made with a little code, lots of care, and 💗 · Happy Birthday!</footer>
+  <footer>
+    Made especially for Umesh by Anu, with lots of care and 💗
+    · Happy Birthday!
+  </footer>
+
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
+```
