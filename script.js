@@ -1,5 +1,5 @@
 // PERSONALIZE THIS FILE: change the nickname, quiz answers, clues, and secret letter.
-const BESTIE_NICKNAME = "anu";
+const BESTIE_NICKNAME = "Gem";
 document.title = `A Little World for ${BESTIE_NICKNAME} 💗`;
 document.getElementById("nicknameTitle").textContent = BESTIE_NICKNAME;
 
